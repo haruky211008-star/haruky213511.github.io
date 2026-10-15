@@ -1,0 +1,13 @@
+.cform{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:1.2rem;text-align:left}
+.cform__q{border:0;padding:0;margin:0;min-width:0}
+.cform__q label,.cform__q legend{display:block;margin-bottom:.5rem;font-weight:600;padding:0}
+.cform input[type=text],.cform input[type=email],.cform select,.cform textarea{width:100%;padding:.8rem;font:inherit;border:2px solid #d5deec;border-radius:6px;background:#fff;outline:none}
+.cform input:focus,.cform select:focus,.cform textarea:focus{border-color:#2091F9}
+.cform__radio{display:block;font-weight:400!important;margin-bottom:.4rem!important;cursor:pointer}
+.cform__btn{border:0;cursor:pointer;align-self:center;font:inherit}
+.cform__btn:disabled{opacity:.6}
+.cform__msg{text-align:center;font-weight:600;min-height:1.3em}
+.cform__msg--ok{color:#1c8a4a}
+.cform__msg--err{color:#e0334c}
+
+#contacto .questions__paragraph{margin-bottom:28px}

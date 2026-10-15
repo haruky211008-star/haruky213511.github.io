@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÁSTER EN CSS3 | Domina el Maquetado Web</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende CSS desde cero hasta nivel profesional">
+    <meta name="description"
+        content="Aprende CSS3, Flexbox, Grid Layout, Animaciones y Responsive Design paso a paso con proyectos reales.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexcgdesign.github.io">
+    <meta property="og:title" content="Aprende CSS desde cero hasta nivel profesional">
+    <meta property="og:description"
+        content="Aprende CSS3, Flexbox, Grid Layout, Animaciones y Responsive Design paso a paso con proyectos reales.">
+    <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jordanalex.com/">
+    <meta property="twitter:title" content="Aprende CSS desde cero hasta nivel profesional">
+    <meta property="twitter:description"
+        content="Aprende CSS3, Flexbox, Grid Layout, Animaciones y Responsive Design paso a paso con proyectos reales.">
+    <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Curso CSS.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img" alt="Menú de navegación">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Aprende CSS3 desde CERO hasta dominarlo.</h1>
+            <p class="hero__paragraph">Elige aprender CSS de una vez por todas. Al finalizar este curso serás capaz de estructurar cualquier sitio web, dominar el diseño adaptable y crear tus propias animaciones interactivas.</p>
+            <a href="#contacto" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
+            <p class="about__paragraph">Dominarás todas las herramientas fundamentales y avanzadas del diseño web moderno (Flexbox, CSS Grid, Custom Properties, Posicionamiento, Animaciones y Box Model).</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/shapes.svg" class="about__icon" alt="Icono de Maquetación">
+                    <h3 class="about__title">CSS Layouts</h3>
+                    <p class="about__paragrah">Aprende a maquetar sitios web modernos y dinámicos utilizando las mejores prácticas de Flexbox y CSS Grid.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/paint.svg" class="about__icon" alt="Icono de Animaciones">
+                    <h3 class="about__title">Animaciones</h3>
+                    <p class="about__paragrah">Crea transiciones fluidas y animaciones complejas empleando keyframes y transformaciones en 2D y 3D.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/code.svg" class="about__icon" alt="Icono de Sass">
+                    <h3 class="about__title">Sass</h3>
+                    <p class="about__paragrah">Optimiza tu código CSS mediante preprocesadores, organizando tus estilos con variables, mixins y anidamiento.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Curso completo de CSS3. ¡Domina CSS de una vez por todas!</h2>
+                    <p class="knowledge__paragraph">Conecta la teoría con la práctica mediante proyectos guiados. Diseñarás interfaces adaptables para todo tipo de pantallas utilizando metodologías limpias y escalables como BEM.</p>
+                    <a href="#contacto" class="cta">Entra al curso</a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/macbook.png" class="knowledge__img" alt="Vista previa del curso en una laptop">
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO: formulario de Formspree con 4 preguntas -->
+        <section class="questions container" id="contacto">
+            <h2 class="subtitle">Cuéntanos sobre ti y CSS 🎨</h2>
+            <p class="questions__paragraph">Responde 4 preguntas y recibimos tus respuestas directo en nuestro correo.</p>
+
+            <form id="formContacto" class="cform" action="https://formspree.io/f/mljgojzv" method="POST">
+                <div class="cform__q">
+                    <label for="c_propiedad">1. ¿Cuál es tu propiedad CSS favorita y por qué?</label>
+                    <input type="text" id="c_propiedad" name="Propiedad favorita" placeholder="Ej: flex, porque centra todo sin dramas" required>
+                </div>
+
+                <div class="cform__q">
+                    <label for="c_animacion">2. ¿Qué animación le pondrías a tu primera página?</label>
+                    <select id="c_animacion" name="Animacion elegida" required>
+                        <option value="" disabled selected>Elige una…</option>
+                        <option>Rebote de botones</option>
+                        <option>Desvanecer al hacer scroll</option>
+                        <option>Giro 3D de tarjetas</option>
+                        <option>Efecto máquina de escribir</option>
+                    </select>
+                </div>
+
+                <fieldset class="cform__q">
+                    <legend>3. Para maquetar, ¿qué prefieres?</legend>
+                    <label class="cform__radio"><input type="radio" name="Maquetado preferido" value="Flexbox" required> Flexbox</label>
+                    <label class="cform__radio"><input type="radio" name="Maquetado preferido" value="CSS Grid"> CSS Grid</label>
+                    <label class="cform__radio"><input type="radio" name="Maquetado preferido" value="Los dos, depende"> Los dos, depende</label>
+                </fieldset>
+
+                <div class="cform__q">
+                    <label for="c_sitio">4. ¿Qué sitio web te gustaría recrear usando solo CSS?</label>
+                    <textarea id="c_sitio" name="Sitio a recrear" rows="3" placeholder="Ej: la página de Netflix, un portafolio, una tienda…" required></textarea>
+                </div>
+
+                <div class="cform__q">
+                    <label for="c_email">Tu correo (para poder responderte)</label>
+                    <input type="email" id="c_email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <p class="cform__msg" id="cMsg" role="status" aria-live="polite"></p>
+                <button type="submit" class="cta cform__btn" id="cBtn">Enviar respuestas</button>
+            </form>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Obtén el plan perfecto para aprender</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Flexbox</p>
+                    <h3 class="price__price">Free</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Flexbox</p>
+                        <p class="price__features">Layouts</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="#contacto" class="price__cta">Empieza ahora</a>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Grid</p>
+                    <h3 class="price__price">$30/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Grid</p>
+                        <p class="price__features">Implicit Grid</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="#contacto" class="price__cta">Empieza ahora</a>
+                </div>
+
+                <div class="price__element">
+                    <p class="price__name">Animaciones</p>
+                    <h3 class="price__price">$40/mes</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Animation</p>
+                        <p class="price__features">Transition</p>
+                        <p class="price__features">Render Website</p>
+                    </div>
+
+                    <a href="#contacto" class="price__cta">Empieza ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before" alt="Anterior testimonio">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Ricardo Enrique, <span class="testimony__course">estudiante del CBTis.No.16.</span></h2>
+                        <p class="testimony__review">Soy un apasionado de la pizza con piña, me sé de memoria diálogos de películas que nadie recuerda, suelo hablarle a los gatos callejeros y, en secreto, estoy enamorado de mi compañera Mariel.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/chino.png.jpeg" class="testimony__img" alt="CHINO">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Alejandra Pérez, <span class="testimony__course">estudiante de CSS.</span></h2>
+                        <p class="testimony__review">Las explicaciones sobre CSS Grid y Responsive Design son excelentes. Los proyectos prácticos me ayudaron muchísimo a formar mi primer portafolio profesional.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.jpg" class="testimony__img" alt="Foto de Alejandra Pérez">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">estudiante de CSS.</span></h2>
+                        <p class="testimony__review">Siempre me costaba trabajo centrar elementos y hacer las páginas adaptables a dispositivos móviles. Este curso resolvió todas mis dudas desde la primera semana.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img" alt="Foto de Karen Arteaga">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Kevin Ramírez, <span class="testimony__course">estudiante de CSS.</span></h2>
+                        <p class="testimony__review">El módulo de animaciones y variables de CSS me pareció increíble. Logré integrar interacciones avanzadas en mi trabajo diario sin depender de librerías externas.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face4.jpg" class="testimony__img" alt="Foto de Kevin Ramírez">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next" alt="Siguiente testimonio">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">Resuelve tus dudas más comunes antes de iniciar tu aprendizaje en desarrollo web.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CSS?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="Desplegar pregunta">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">CSS (Cascading Style Sheets) es el lenguaje utilizado para definir la apariencia, el diseño y la presentación visual de un documento escrito en HTML. Permite aplicar colores, fuentes, espaciados y maquetaciones adaptables.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué aprenderé en este curso?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="Desplegar pregunta">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Aprenderás desde los fundamentos del Box Model y selecciones hasta técnicas avanzadas de maquetado con Flexbox y CSS Grid, animaciones, transiciones, diseño responsivo y preprocesadores como Sass.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CSS GRID?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img" alt="Desplegar pregunta">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">CSS Grid es un sistema de maquetación bidimensional diseñado para la web. Permite dividir una página en regiones principales o definir la relación en términos de tamaño, posición y capa entre elementos HTML.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estás listo para aprender CSS?</h2>
+                <p class="questions__copy">Únete a nuestra comunidad de estudiantes y domina el desarrollo web frontend desde hoy. Accede a todo el contenido y comienza a construir proyectos profesionales.</p>
+                <a href="#contacto" class="cta">Aprende ahora</a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CSS.</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/harujy211008@gmail.com" method="POST">
+                <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Regístrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://facebook.com" class="footer__icons" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.svg" class="footer__img" alt="Facebook"></a>
+                <a href="https://twitter.com" class="footer__icons" target="_blank" rel="noopener noreferrer"><img src="./images/twitter.svg" class="footer__img" alt="Twitter"></a>
+                <a href="https://youtube.com" class="footer__icons" target="_blank" rel="noopener noreferrer"><img src="./images/youtube.svg" class="footer__img" alt="YouTube"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Jordan Alexander</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/contacto.js"></script>
+    <script src="./js/menuderecho.js"></script>
+</body>
+
+</html>

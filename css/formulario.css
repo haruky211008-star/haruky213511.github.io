@@ -1,0 +1,41 @@
+.fpage{background:#f2f6fc;min-height:100vh;color:var(--color-title)}
+.fhead{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background:var(--color-title);color:#fff}
+.fhead a{color:#fff;text-decoration:none}
+.fhead__logo{font-size:1.5rem;font-weight:300}
+.fhead__back{font-size:.9rem;opacity:.85}
+.fhead__back:hover{opacity:1}
+.fwrap{width:90%;max-width:720px;margin:40px auto 80px}
+.fcard{background:#fff;border-radius:16px;padding:40px;box-shadow:0 10px 30px rgba(0,26,73,.1)}
+.fcard[hidden]{display:none}
+.fcard__title{font-size:1.8rem;line-height:1.25;margin-bottom:10px}
+.fcard__intro{color:#4b5b78;margin-bottom:28px}
+.fq{border:0;padding:0;margin:0 0 26px;min-width:0}
+.fq__label{display:block;font-weight:600;margin-bottom:10px;padding:0}
+.fq__input{width:100%;height:50px;padding:0 14px;font:inherit;border:2px solid #d5deec;border-radius:8px;margin:0;outline:none;transition:border-color .2s,box-shadow .2s}
+.fq__input--area{height:auto;padding:12px 14px;resize:vertical}
+.fq__input:focus{border-color:#2091F9;box-shadow:0 0 0 3px rgba(32,145,249,.2)}
+.fq--bad .fq__input{border-color:#e0334c}
+.fq__error{color:#e0334c;font-size:.85rem;min-height:0;margin-top:6px}
+.fq__error:empty{display:none}
+.fq__count{text-align:right;font-size:.8rem;color:#7a879f;margin-top:4px}
+.opts{display:grid;gap:10px}
+.opts--chips{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.opt{display:block;cursor:pointer}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:block;padding:12px 14px;border:2px solid #d5deec;border-radius:10px;transition:all .15s}
+.opt:hover span{border-color:#2091F9}
+.opt input:checked+span{background:#2091F9;border-color:#2091F9;color:#fff;transform:translateY(-1px)}
+.opt input:focus-visible+span{box-shadow:0 0 0 3px rgba(32,145,249,.35)}
+.fq--bad .opt span{border-color:#f0a0ac}
+.fq__range{width:100%;accent-color:#2091F9}
+.fq__rangeval{text-align:center;font-size:1.1rem}
+.emoji{font-size:1.6rem;vertical-align:middle;margin-left:6px}
+.fhoney{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.fstatus{text-align:center;min-height:1.4em;margin-bottom:12px;font-weight:600}
+.fstatus--err{color:#e0334c}
+.fbtn{display:block;margin:0 auto;border:0;cursor:pointer;font:inherit;font-weight:600}
+.fbtn:disabled{opacity:.6;cursor:wait}
+.fcard--ok{text-align:center}
+.ok__emoji{font-size:4rem;animation:pop .6s ease}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.25)}100%{transform:scale(1)}}
+@media (max-width:600px){.fcard{padding:24px}.fcard__title{font-size:1.4rem}}

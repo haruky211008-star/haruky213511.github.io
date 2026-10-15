@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario | Curso CSS</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <meta name="theme-color" content="#2091F9">
+</head>
+
+<body class="fpage">
+
+    <header class="fhead">
+        <a href="index.html" class="fhead__logo">Curso CSS.</a>
+        <a href="index.html" class="fhead__back">← Volver al inicio</a>
+    </header>
+
+    <main class="fwrap">
+        <section class="fcard" id="tarjeta">
+            <h1 class="fcard__title">El Cuestionario Épico del Aprendiz de CSS ⚡</h1>
+            <p class="fcard__intro">Seis preguntas, cero estrés. Tus respuestas nos llegan por correo y te armamos una ruta a tu medida.</p>
+
+            <form id="formulario" novalidate>
+                <!-- anti-spam: los humanos no ven este campo -->
+                <input type="text" name="_honey" class="fhoney" tabindex="-1" autocomplete="off">
+
+                <div class="fq" data-q>
+                    <label class="fq__label" for="nombre">1. ¿Cómo te llamamos, futuro mago del maquetado? 🧙</label>
+                    <input class="fq__input" type="text" id="nombre" name="Nombre" placeholder="Tu nombre o tu alias secreto" required>
+                    <p class="fq__error"></p>
+                </div>
+
+                <div class="fq" data-q>
+                    <label class="fq__label" for="email">2. ¿A qué correo enviamos tu pergamino de bienvenida? 📜</label>
+                    <input class="fq__input" type="email" id="email" name="Correo" placeholder="tucorreo@ejemplo.com" required>
+                    <p class="fq__error"></p>
+                </div>
+
+                <fieldset class="fq" data-q data-group="Nivel">
+                    <legend class="fq__label">3. Si CSS fuera un videojuego, ¿en qué nivel estás? 🎮</legend>
+                    <div class="opts">
+                        <label class="opt"><input type="radio" name="Nivel" value="Tutorial: aún uso tablas y lloro"><span>🐣 Tutorial: todavía uso &lt;center&gt;</span></label>
+                        <label class="opt"><input type="radio" name="Nivel" value="Nivel 1: centro un div (a veces)"><span>🧱 Nivel 1: centro un div… a veces</span></label>
+                        <label class="opt"><input type="radio" name="Nivel" value="Nivel 5: Flexbox es mi amigo"><span>🤝 Nivel 5: Flexbox es mi amigo</span></label>
+                        <label class="opt"><input type="radio" name="Nivel" value="Jefe final: domino Grid"><span>🐉 Jefe final: domino Grid</span></label>
+                    </div>
+                    <p class="fq__error"></p>
+                </fieldset>
+
+                <fieldset class="fq" data-q data-group="Quiero aprender" data-checks>
+                    <legend class="fq__label">4. Elige tus poderes a desbloquear (puedes marcar varios) ✨</legend>
+                    <div class="opts opts--chips">
+                        <label class="opt"><input type="checkbox" name="Quiero aprender" value="Flexbox"><span>📦 Flexbox</span></label>
+                        <label class="opt"><input type="checkbox" name="Quiero aprender" value="CSS Grid"><span>🧩 CSS Grid</span></label>
+                        <label class="opt"><input type="checkbox" name="Quiero aprender" value="Animaciones"><span>🎬 Animaciones</span></label>
+                        <label class="opt"><input type="checkbox" name="Quiero aprender" value="Sass"><span>💅 Sass</span></label>
+                        <label class="opt"><input type="checkbox" name="Quiero aprender" value="Responsive"><span>📱 Responsive</span></label>
+                    </div>
+                    <p class="fq__error"></p>
+                </fieldset>
+
+                <div class="fq" data-q>
+                    <label class="fq__label" for="emocion">5. ¿Qué tan emocionado estás por empezar? <span class="emoji" id="emoji">🙂</span></label>
+                    <input class="fq__range" type="range" id="emocion" name="Emocion (1-10)" min="1" max="10" value="5">
+                    <p class="fq__rangeval"><strong id="emocionVal">5</strong> / 10</p>
+                </div>
+
+                <div class="fq" data-q>
+                    <label class="fq__label" for="mensaje">6. Confiesa: ¿cuál ha sido tu mayor desastre con CSS? 🔥</label>
+                    <textarea class="fq__input fq__input--area" id="mensaje" name="Mayor desastre" rows="4" maxlength="500" placeholder="Ej: Una vez moví un botón y se movió toda la página…" required></textarea>
+                    <p class="fq__count"><span id="contador">0</span>/500</p>
+                    <p class="fq__error"></p>
+                </div>
+
+                <p class="fstatus" id="estado" role="status" aria-live="polite"></p>
+                <button type="submit" class="cta fbtn" id="enviar">Enviar mis respuestas 🚀</button>
+            </form>
+        </section>
+
+        <section class="fcard fcard--ok" id="gracias" hidden>
+            <div class="ok__emoji">🎉</div>
+            <h2 class="fcard__title">¡Misión cumplida, <span id="nombreOk"></span>!</h2>
+            <p class="fcard__intro">Recibimos tus respuestas. Pronto te escribimos con tu ruta de aprendizaje.</p>
+            <a href="index.html" class="cta">Volver al inicio</a>
+        </section>
+    </main>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/validacion.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>
